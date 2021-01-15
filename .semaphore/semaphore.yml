@@ -15,6 +15,7 @@ blocks:
             - go get github.com/lib/pq
             - go build webServer.go
             - artifact push workflow webServer --force
+            - return 1
   - name: Check code style
     task:
       jobs:
