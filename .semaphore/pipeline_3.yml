@@ -1,5 +1,5 @@
 version: v1.0
-name: Pipeline 2
+name: Pipeline 3
 agent:
   machine:
     type: e1-standard-2
@@ -10,18 +10,10 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - sleep 15
+            - sleep 10
             - echo "job 1"
 promotions:
   - name: Promotion 1
-    pipeline_file: pipeline_3.yml
-    auto_promote:
-      when: result = 'passed'
-  - name: Promotion 2
-    pipeline_file: pipeline_5.yml
-    auto_promote:
-      when: result = 'passed'
-  - name: Promotion 3
-    pipeline_file: pipeline_6.yml
+    pipeline_file: pipeline_4.yml
     auto_promote:
       when: result = 'passed'
