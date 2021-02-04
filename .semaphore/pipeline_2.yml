@@ -12,16 +12,3 @@ blocks:
           commands:
             - sleep 15
             - echo "job 1"
-promotions:
-  - name: Promotion 1
-    pipeline_file: pipeline_3.yml
-    auto_promote:
-      when: result = 'passed'
-  - name: Promotion 2
-    pipeline_file: pipeline_5.yml
-    auto_promote:
-      when: result = 'passed'
-  - name: Promotion 3
-    pipeline_file: pipeline_6.yml
-    auto_promote:
-      when: result = 'passed'

@@ -12,8 +12,3 @@ blocks:
           commands:
             - sleep 10
             - echo "job 1"
-promotions:
-  - name: Promotion 1
-    pipeline_file: pipeline_4.yml
-    auto_promote:
-      when: result = 'passed'
